@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>श्री विद्या प्रमाण गुरुकुलम् | Vidya Praman Gurukulam</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Noto+Sans+Devanagari:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+      background-color: #FFF8F0;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #8B1E1E;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #EEC24B;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+      background: linear-gradient(rgba(139,30,30,0.8), rgba(139,30,30,0.8)), url('https://i.imgur.com/Or9oXfP.jpeg') center/cover no-repeat;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    .hero button {
+      background-color: #EEC24B;
+      color: #8B1E1E;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      margin-top: 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h3 {
+      color: #8B1E1E;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background-color: #8B1E1E;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    footer p {
+      margin: 0.3rem 0;
+    }
+
+    /* Popup Donation Box */
+    #popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.7);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup-content {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 350px;
+    }
+
+    .popup-content img {
+      width: 200px;
+      height: auto;
+      margin: 1rem 0;
+    }
+
+    .popup-content button {
+      background-color: #8B1E1E;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    @media(max-width: 768px) {
+      nav {
+        display: none;
+      }
+      header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>श्री विद्या प्रमाण गुरुकुलम्</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#activities">Activities</a>
+      <a href="#programs">Programs</a>
+      <a href="#donate">Donate</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>“बेहतर कल के लिए विचारों का संगम”</h2>
+    <p>Guided by मुनि श्री 108 प्रमाणसागर जी महाराज</p>
+    <button onclick="scrollToDonate()">Join Gurukulam</button>
+  </section>
+
+  <section id="about">
+    <h3>गुरुकुलम परिचय</h3>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      श्री विद्या प्रमाण गुरुकुलम् भोपाल (म.प्र.) में स्थापित एक अनोखा शैक्षिक एवं संस्कार केन्द्र है।
+      यहाँ शिक्षा, अनुशासन और आत्मविकास का संगम होता है।  
+      SAGE School, APT और VIM के सहयोग से यह गुरुकुल आधुनिक शिक्षा, CA प्रशिक्षण और MBA कार्यक्रम का समन्वय करता है।
+    </p>
+  </section>
+
+  <section id="activities">
+    <h3>गुरुकुलम जीवन</h3>
+    <div class="grid">
+      <div class="card">🧘 योग दिवस एवं आंवला चैलेंज</div>
+      <div class="card">🎨 पेंटिंग व शिक्षकों का सम्मान दिवस</div>
+      <div class="card">🎶 गरबा एवं अंताक्षरी प्रतियोगिता</div>
+      <div class="card">🌿 भोजपुर पिकनिक एवं जैन सात्विक भोजन</div>
+    </div>
+  </section>
+
+  <section id="programs">
+    <h3>शैक्षिक कार्यक्रम</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>📘 स्कूल शिक्षा</h4>
+        <p>कक्षा VI–XII तक, SAGE International School द्वारा प्रदान की जाती है।</p>
+      </div>
+      <div class="card">
+        <h4>💼 कॉमर्स / CA प्रशिक्षण</h4>
+        <p>APT द्वारा प्रायोजित क्लासेज (XI–XII, CA-Foundation, CA-Inter)।</p>
+      </div>
+      <div class="card">
+        <h4>🎓 MBA / उच्च शिक्षा</h4>
+        <p>Vidhya Sagar Institute of Management द्वारा 100% Job Guaranteed MBA Program।</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="donate">
+    <h3>गुरुकुल सहयोग योजनाएँ</h3>
+    <div class="grid">
+      <div class="card">गुरुकुल गौरव – ₹11,00,000</div>
+      <div class="card">गुरुकुल सहयोग – ₹5,00,000</div>
+      <div class="card">सेवा सहयोग – ₹2,50,000</div>
+      <div class="card">गुरुकुल मित्र – ₹1,21,000</div>
+      <div class="card">गुरुकुल प्रेम – ₹51,000</div>
+    </div>
+    <div style="text-align:center; margin-top:2rem;">
+      <button id="donateBtn">Donate Now (QR Scan)</button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>संपर्क करें</h3>
+    <p style="text-align:center;">
+      📍 New Fort Colony, Awadhpuri, Bhopal, Madhya Pradesh 462022<br>
+      ☎️ Helpline: 9713055664<br>
+      📧 info@vidyapramangurukulam.org
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 श्री विद्या प्रमाण गुरुकुलम् | All Rights Reserved</p>
+  </footer>
+
+  <!-- Donation Popup -->
+  <div id="popup">
+    <div class="popup-content">
+      <h3>Scan to Donate</h3>
+      <img src="https://i.imgur.com/0vC0x8a.png" alt="Donation QR Code">
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    // Smooth scroll to donate
+    function scrollToDonate() {
+      document.querySelector("#donate").scrollIntoView({behavior: "smooth"});
+    }
+
+    // Popup logic
+    const popup = document.getElementById('popup');
+    const donateBtn = document.getElementById('donateBtn');
+    donateBtn.addEventListener('click', () => popup.style.display = 'flex');
+    function closePopup() {
+      popup.style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
